@@ -1,6 +1,6 @@
 async function getPostsByCategory(category) {
     const res = await fetch(
-      `https://cesare-ferraro.ghost.io/ghost/api/content/posts/?key=16ad17e315b2e32c0b58c9f0c5&filter=tag:${category}&include=tags`
+      `https://cesareferraro.mymagic.page/ghost/api/content/posts/?key=7fe949a0682029bd4e4dc533b7&filter=tag:${category}&include=tags`
     );
     const data = await res.json();
     return data.posts || [];
