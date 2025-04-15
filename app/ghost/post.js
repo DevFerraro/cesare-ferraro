@@ -94,7 +94,7 @@
 export async function getAllPosts(limit = 100) {
   try {
       const res = await fetch(
-          `https://cesare-ferraro.ghost.io/ghost/api/content/posts/?key=16ad17e315b2e32c0b58c9f0c5&limit=${limit}&include=tags&order=published_at%20desc`,
+          `https://cesareferraro.mymagic.page/ghost/api/content/posts/?key=7fe949a0682029bd4e4dc533b7&limit=${limit}&include=tags&order=published_at%20desc`,
           { cache: "no-store" }
       );
       const data = await res.json();
@@ -119,7 +119,7 @@ export async function getAllPosts(limit = 100) {
 export async function getRecentPosts() {
   try {
       const res = await fetch(
-          `https://cesare-ferraro.ghost.io/ghost/api/content/posts/?key=16ad17e315b2e32c0b58c9f0c5&limit=3&include=tags&order=published_at%20desc`,
+          `https://cesareferraro.mymagic.page/ghost/api/content/posts/?key=7fe949a0682029bd4e4dc533b7&limit=3&include=tags&order=published_at%20desc`,
           { cache: "no-store" }
       );
       const data = await res.json();
@@ -145,7 +145,7 @@ export async function getRecentPosts() {
 export async function getPostsByCategory(categorySlug, limit = 100) {
   try {
       const res = await fetch(
-          `https://cesare-ferraro.ghost.io/ghost/api/content/posts/?key=16ad17e315b2e32c0b58c9f0c5&filter=tag:${categorySlug}&include=tags&order=published_at%20desc&limit=${limit}`,
+          `https://https://cesareferraro.mymagic.page/ghost/api/content/posts/?key=7fe949a0682029bd4e4dc533b7&filter=tag:${categorySlug}&include=tags&order=published_at%20desc&limit=${limit}`,
           { cache: "no-store" }
       );
       const data = await res.json();
@@ -173,7 +173,7 @@ export async function getPostBySlug(postSlug, categorySlug = null) {
   console.log(`--- [getPostBySlug Chiamata V2] Slug: "${postSlug}", Categoria: "${categorySlug}" ---`); // Aggiunto V2 per chiarezza
   try {
       // Chiamata API per ottenere il post tramite lo slug
-      const apiUrl = `https://cesare-ferraro.ghost.io/ghost/api/content/posts/slug/${postSlug}/?key=16ad17e315b2e32c0b58c9f0c5&include=tags`;
+      const apiUrl = `https://cesareferraro.mymagic.page/ghost/api/content/posts/slug/${postSlug}/?key=7fe949a0682029bd4e4dc533b7&include=tags`;
       console.log(`[getPostBySlug V2] Fetching URL: ${apiUrl}`);
       const res = await fetch(apiUrl, { cache: "no-store" });
 
@@ -269,7 +269,7 @@ const filter = `published_at:>=${startDate}+published_at:<=${endDate}`;
       const encodedFilter = encodeURIComponent(filter);
 
       // Costruisci l'URL completo per l'API di Ghost
-      const apiUrl = `https://cesare-ferraro.ghost.io/ghost/api/content/posts/?key=16ad17e315b2e32c0b58c9f0c5&filter=${encodedFilter}&include=tags&order=published_at%20desc&limit=all`;
+      const apiUrl = `https://cesareferraro.mymagic.page/ghost/api/content/posts/?key=7fe949a0682029bd4e4dc533b7&filter=${encodedFilter}&include=tags&order=published_at%20desc&limit=all`;
 
       // Logga l'URL che sta per essere chiamato (utile per debug)
       console.log(`URL API Ghost chiamato (CORRETTO): ${apiUrl}`);
