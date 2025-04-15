@@ -1,0 +1,82 @@
+@import "tailwindcss";
+
+:root {
+  --black: rgb(0, 0, 0);
+  --yellow: rgb(255, 247, 6);
+  --bianco: rgb(248, 248, 248);
+}
+
+.bg-black {
+
+  background-color: var(--black);
+
+}
+
+.bg-yellow {
+
+  background-color: var(--yellow);
+
+}
+
+.bg-yellow-trasparent {
+  bg-yellow-trasparent: var(--yellow-trasparent);
+
+}
+
+.bg-bianco {
+
+  background-color: var(--bianco);
+
+}
+
+.text-black {
+
+  color: var(--black);
+}
+
+.text-yellow-custom {
+
+  color: var(--yellow);
+
+}
+
+.text-yellow-trasparent {
+
+  color: var(--yellow-trasparent);
+  
+}
+
+.text-bianco {
+
+  color: var(--bianco);
+  
+}
+
+.main-font {
+    font-family: "Rancho", cursive;
+  
+  }
+
+.content-font {
+
+  font-family:  "Francois One", sans-serif;
+}
+
+.nanum-myeongjo-regular {
+  font-family: "Nanum Myeongjo", serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
+
+.logo-font {
+
+  font-family: "Ramabhadra", sans-serif;
+}
+
+body {
+  background-color: rgba(255, 247, 6, 0.06);
+  
+  margin: 0;
+  padding: 0;
+}
